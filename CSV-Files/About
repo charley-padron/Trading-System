@@ -1,1 +1,5 @@
 This folder contains sample CSV files from Stock Screener.
+Some are unpopulated, but the constituents file has all the stocks under the S&P 500 index and their market sector such as industrial,
+information technology and healthcare. SP500 CSV is a list of only the symbol names, the SP500-Data CSV contains data that will be
+populated by Stock Screener with Symbol, Currrent Price,	Monte Carlo simulation estimated price,	RSI, 	MACD,	and a Probabilty Score. This
+data is used to make trade decisions in SP500Orders.java.
