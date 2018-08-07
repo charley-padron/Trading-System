@@ -12,7 +12,7 @@ import java.io.FileNotFoundException;
 
 import java.util.*;
 
-public class WriteSP500 {
+public class main {
 
 	public static void main(String[] args) throws FileNotFoundException {
 		// TODO Auto-generated method stub		
@@ -25,12 +25,5 @@ public class WriteSP500 {
 		orders.SP500Orders();
 
 	}
-	
-	//Final main class should contain
-	/*
-	 * call SP500Orders
-	 * recieve confirmation and print to reciept and to screen
-	 * end of main
-	 * */
 
 }
