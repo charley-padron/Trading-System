@@ -9,8 +9,6 @@ public class Stock {
 	private int quantity;
 	private int RSI;
 	private int MACD;
-	private double probScore;
-	
 	
 	public Stock(){
 		
@@ -85,12 +83,6 @@ public class Stock {
 		
 	}
 	
-	public void setProbScore(double probScore){
-		
-		this.probScore = probScore;
-		
-	}
-	
 	//getters
 	public String getCompanyName(){
 		
@@ -137,12 +129,6 @@ public class Stock {
 	public int getMACD(){
 		
 		return this.MACD;
-		
-	}
-	
-	public double getProbScore(){
-		
-		return this.probScore;
 		
 	}
 
