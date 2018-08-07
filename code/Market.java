@@ -1,5 +1,3 @@
-//This class is for market data from eTrade, maybe not used but still worth having for scalability of other features
-
 import java.io.IOException;
 import java.util.*;
 
