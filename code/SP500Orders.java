@@ -1,8 +1,5 @@
 //this class will read the file 
 //and create a ArrayList (queue) of Stock objects you want to trade
-//return this list to main to be sent to create orders
-//contain a method that returns order list
-//contain a method that decides order quantity depending on AccountBalance
 
 import com.etrade.etws.account.Account;
 import com.etrade.etws.order.PlaceEquityOrderResponse;
@@ -29,8 +26,8 @@ public class SP500Orders {
 		this.acct = getAccount();
 		
 		//csv contains
-		//MMM170.35175.555500.94657
-		//Symbol # Current Price # Predicted Price # RSI # MACD # ProbScore
+		//MMM170.35175.55550
+		//Symbol # Current Price # Predicted Price # RSI # MACD 
 		
 		
 		ArrayList<String> list = new ArrayList<String>();
@@ -40,7 +37,6 @@ public class SP500Orders {
 		ArrayList<Double> estPrice = new ArrayList<Double>();
 		ArrayList<Integer> RSI = new ArrayList<Integer>();
 		ArrayList<Integer> MACD = new ArrayList<Integer>();
-		ArrayList<Double> probScore = new ArrayList<Double>();
 		
 		try {
 			scan = new Scanner(new File("SP500-Data.csv"));
@@ -70,9 +66,8 @@ public class SP500Orders {
 				estPrice.add(Double.parseDouble(list.get(i+2)));
 				RSI.add(Integer.parseInt(list.get(i+3)));
 				MACD.add(Integer.parseInt(list.get(i+4)));
-				probScore.add(Double.parseDouble(list.get(i+5)));
 				
-				i += 6;
+				i += 5;
 				
 			}//end of for
 			
@@ -131,8 +126,6 @@ public class SP500Orders {
 			
 		}
 		
-		//consider prob score
-		
 		ArrayList<Stock> stockList = new ArrayList<Stock>();
 		
 		for(int i = 0; i < tradeable.size(); i++){
@@ -149,7 +142,6 @@ public class SP500Orders {
 			stock.setSellPrice(estPrice.get(tradeable.get(i)));
 			stock.setRSI(RSI.get(tradeable.get(i)));
 			stock.setMACD(MACD.get(tradeable.get(i)));
-			stock.setProbScore(probScore.get(tradeable.get(i)));
 			
 			//Default of 100
 			int quantity = 100;
