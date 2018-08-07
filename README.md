@@ -11,8 +11,8 @@ To run this program or utilize the E-Trade API you must have external JAR's adde
 
 In addition, you must have a file in your program named "local.properties", this file should contain your keys from E-Trade that you can request if you have an E-Trade account. The format of this file should be:
 
-consumer_key: ################
-consumer_secret: ##################
+consumer_key = ################
+consumer_secret = ##################
 
 where the "#" is your key. Also you should edit the program if your are using the SANDBOX or LIVE enviroment. The SANDBOX enviroment is a way to test that all your calls to E-Trade are functioning correct and the LIVE enviroment executes real trades in your account with real money. 
 
