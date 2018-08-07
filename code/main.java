@@ -1,10 +1,3 @@
-//This class will test how to write to a .csv like SP500.csv
-//Will then be implemented to get stock data from list and write to the list the values
-
-//maybe not needed - but will be used as my main for now
-//maybe delete this class once other classes are done to have a proper main
-//or maybe rename this one
-
 import java.io.File;
 import java.io.FileNotFoundException;
 
