@@ -32,30 +32,6 @@ import java.util.Date;
 
 public class Orders {
 	
-	//if order is executed call a method to write to a file the reciept, 
-	//have a method to extract order details if possible
-	//this can mean to have a method for order execution notfication, reciept 
-	//method could go in another class but this class needs order notification
-	//to verify an order was filled, if it was write to file order details and
-	//if it was a buy or sell
-	/* 
-	 * Account API has alerts that can inform you if order ws executed
-	 * 
-	 * =======Start of this order======
-	 * Company Name: 
-	 * Symbol:
-	 * Order Type: Buy or Sell
-	 * Quantity:
-	 * Buy Price:
-	 * or
-	 * Sell Price;
-	 * Date:
-	 * =======End of this order========
-	 * */
-	//Have a notification method to confirm order was complete
-	//Maybe on SP500Orders needs the alert and not here
-	//we'll see --- maybe this class write to reciept
-	
 	private static ClientRequest request = Login.getRequest();
 	
 	//Place Buy order method
@@ -88,14 +64,6 @@ public class Orders {
 		
 	}
 	
-	//add code to print to receipt confirmation of buy or sell orders
-	public void receipt(){
-		
-		//code snippet for alerts
-		//GetAlertsResponse alerts = client.getAlerts()
-		
-	}
-	
 	//Create unique order ID so that no order is repeated
 	//maximum of 20 alphanumeric 
 	private static String createClientOrderID(EquityOrderRequest eqOrderReq){ 
@@ -115,6 +83,7 @@ public class Orders {
 		String symbol = eqOrderReq.getSymbol().toString(); 
 		
 		//Final format BUY or SELL SYMBL QQQQ MMDDHHMM
+		//Sample: BUYAAPL10007301035 -> BUY AAPL (Apple) 100 quantity on 07/30 at 10:35
 		return String.format("%s%s%s%s", orderAction, symbol, quantity, dateString);
 		
 	}
