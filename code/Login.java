@@ -26,14 +26,14 @@ public class Login {
 	public static IOAuthClient client = null; 
 	public static ClientRequest request = null; 
 	public static Token token = null; 
-	public static String oauth_consumer_key = null; // SET TO NULL WHEN GITHUB Your consumer key 
-	public static String oauth_consumer_secret = null; //SET TO NULL Your consumer secret 
+	public static String oauth_consumer_key = null;  
+	public static String oauth_consumer_secret = null;  
 	public static String oauth_request_token = null; // Request token  
 	public static String oauth_request_token_secret = null; // Request token secret 
 	
 	public static String oauth_access_token = null; // Variable to store access token 
 	public static String oauth_access_token_secret = null; // Variable to store access token secret
-	public static String oauth_verify_code = "Your verification_code"; // Should contain the Verification Code received from the authorization step
+	public static String oauth_verify_code = null; // Should contain the Verification Code received from the authorization step
 	
 	public static void login(){
 		
