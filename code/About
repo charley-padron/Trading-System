@@ -1,1 +1,5 @@
 This is the code that connects your account to the API to have access to Account functions such as placing orders. 
+There is also a file named SP500Orders which is the program that reads the CSV file with the stock data, the program also logs you in
+to your E-Trade account and creates orders. The main file is responsible for calling SP500Orders to execute the trades.
+
+To implement a different strategy you will just need to create a new class and in main call that class instead of SP500Orders.
