@@ -1,0 +1,10 @@
+Symbol: AAPL
+Date Bought: 07/19/2018 
+Date Sold: 08/15/2018
+Holding Period: 26 days
+Price Paid: 191.42
+Price Sold: 195.28
+Quantity: 150
+P/L: $579.00
+(New Line)
+(Next)(Created once position is closed)
