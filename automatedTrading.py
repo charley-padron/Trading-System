@@ -2,9 +2,6 @@ import json
 import configparser
 import requests
 from rauth import OAuth1Service
-from accounts.accounts import Accounts
-from market.market import Market
-from alerts.alerts import Alerts
 
 # not needed from bs4 import BeautifulSoup
 from selenium import webdriver
