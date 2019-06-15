@@ -13,4 +13,5 @@ After login and authentication, the program reads a CSV from created by another 
 Future feature include adding a database, reciept of transactions, and others. Additionally, I would like to use this to execute trades of other stocks besides those in the S&P 500. This is another program that is still in development. 
 
 ## Trading System with Command Line
-The version of the program provides a command line interface to access all of the features of the E-Trade API.
+The version of the program provides a command line interface to access all of the features of the E-Trade API. 
+Code will be added soon.
