@@ -24,7 +24,9 @@ You can download these using the command line and entering pip install "Library 
 
 After you have these libraries you'll need to enter your consumer key and consumer secret from E-Trade into the config file after the equals sing. Information on how to obtain the keys can be found here: https://developer.etrade.com/getting-started
 
-Once you have the keys, make sure you the automatedTrading.py, config.ini and SP500Data.csv in the same directory. Enter the command line enter that directory. Once you are there, enter "python automatedTrading.py". This will begin the program and execute trades. I recommend changing the SP500Data.csv with your own CSV file or other format that contains the symbols you would like to trade.
+Once you have the keys, make sure you the automatedTrading.py, config.ini and SP500Data.csv in the same directory. Edit the pyhton file to include the path of the webdriver and the path for the CSV file. 
+
+In the command line enter the directory where these files are. Once you are there, enter "python automatedTrading.py". This will begin the program and execute trades. I recommend changing the SP500Data.csv with your own CSV file or other format that contains the symbols you would like to trade.
 
 #### Command Line Version
 Details coming soon.
