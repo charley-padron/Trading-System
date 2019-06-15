@@ -15,3 +15,16 @@ Future feature include adding a database, reciept of transactions, and others. A
 ## Trading System with Command Line
 The version of the program provides a command line interface to access all of the features of the E-Trade API. 
 Code will be added soon.
+
+## Running the program:
+
+#### Automated Trading System
+In order to run the automated version you will need to install libraries that are used. These libraries are requests, pandas and selenium.
+You can download these using the command line and entering pip install "Library Name". For example, to install pandas you would need to enter pip install pandas. 
+
+After you have these libraries you'll need to enter your consumer key and consumer secret from E-Trade into the config file after the equals sing. Information on how to obtain the keys can be found here: https://developer.etrade.com/getting-started
+
+Once you have the keys, make sure you the automatedTrading.py, config.ini and SP500Data.csv in the same directory. Enter the command line enter that directory. Once you are there, enter "python automatedTrading.py". This will begin the program and execute trades. I recommend changing the SP500Data.csv with your own CSV file or other format that contains the symbols you would like to trade.
+
+#### Command Line Version
+Details coming soon.
