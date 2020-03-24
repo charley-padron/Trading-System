@@ -18,7 +18,7 @@ config.read('config.ini')
 # List of stocks to buy or short based on MACD and RSI numbers
 stockBuy = []
 stockShort = []
-# watchlist for the stocks that did not meet the trade parameters
+# List for the stocks that did not meet the trade parameters
 watchList = []
 
 # Read config file
